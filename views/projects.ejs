@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - Projects</title>
+  <style>
+    /* Styling for the body */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Styling for the main content section */
+    main {
+      flex: 1;
+    }
+    
+    /* Styling for the footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    /* Styling for project images */
+    .project img {
+      max-width: 50%;
+      height: auto;
+    }
+  </style>
+  <!-- Link to the main CSS file -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body style="font-family: Arial, sans-serif;
+background-repeat: no-repeat;
+background-size: cover; background-image: url('profile.jpg');">
+  <!-- Include the header file -->
+  <%- include('header') %>
+  
+  <main>
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>
+          <li>Designed a responsive, user-oriented website for shop owners for the on-going process in renting a shop.</li>
+          <li>The main objective of the proposed system is to automate the rent paid for the shops by the renter.</li>
+          <li>The software used is Visual Basic 6.0 as front end and back end along with MS Access as database.</li>
+        </p>
+      </div>
+  
+      <div class="project">
+        <img src="images/project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>
+          <li>Developed a web app for booking adventure camps by choosing areas or countries.</li>
+          <li>The system has the option to search for and reserve the seat.</li>
+          <li>The front end uses HTML, back end uses ASP.NET and MS SQL as database.</li>
+        </p>
+      </div>
+  
+      <div class="project">
+        <img src="images/project3.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>
+          <li>Develop a system used for a pharmacy that helps automate the pharmacy workflow.</li>
+          <li>Creates a database for managing medicines, customers, orders, and employees.</li>
+          <li>Database created using Oracle DBMS.</li>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio.</p>
+  </footer>
+</body>
+</html>

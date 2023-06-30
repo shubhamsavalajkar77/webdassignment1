@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - Services</title>
+  <style>
+    /* Styling for the body */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Styling for the main content section */
+    main {
+      flex: 1;
+    }
+    
+    /* Styling for the footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    /* Styling for service images */
+    .service img {
+      max-width: 20%;
+      height: auto;
+    }
+  </style>
+  <!-- Link to the main CSS file -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body style="font-family: Arial, sans-serif;
+background-repeat: no-repeat;
+background-size: cover; background-image: url('profile.jpg');">
+  <!-- Include the header file -->
+  <%- include('header') %>
+  
+  <main>
+    <h2 style="text-align:center;">Services</h2>
+
+    <div class="service">
+      <img src="images/service1.jpg" alt="Service 1">
+      <h3>Web Development</h3>
+      <p>Professional web development services tailored to your needs.</p>
+    </div>
+    <br><br>
+    <div class="service">
+      <img src="images/service2.jpg" alt="Service 2">
+      <h3>UI/UX Design</h3>
+      <p>Creating intuitive and visually appealing user interfaces and experiences.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio.</p>
+  </footer>
+</body>
+</html>

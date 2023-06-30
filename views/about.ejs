@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - About Me</title>
+  <style>
+    /* CSS styles for the page layout */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    main {
+      flex: 1;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body style="font-family: Arial, sans-serif;
+background-repeat: no-repeat;
+background-size: cover; background-image: url('profile.jpg');">
+  <!-- Include the header component -->
+  <%- include('header') %>
+  
+  <main>
+    <h2>About Me</h2>
+    <img src="/images/profile.jpg" alt="My Profile Picture" style="max-width: 25%">
+    
+    <p>Hello, I'm Shubham Shivajirao Savalajkar, a passionate Software Engineer with experience in C#, Java, Python, Database and C++</p>
+    <p>With experience in web development tools - Python, Flask Develpoment, HTML, CSS, and JavaScript</p>
+    <p>I enjoy building user-friendly and visually appealing websites that provide a great user experience.</p>
+    
+    <!-- Add a link to download the resume -->
+    <a href="assets/resume.pdf" target="_blank">Download Resume</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio.</p>
+  </footer>
+</body>
+</html>
